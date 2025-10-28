@@ -1,2 +1,2 @@
 # EJEMPLO
-Repositorio de prueba y simulación
+Repositorio de prueba y simulación.

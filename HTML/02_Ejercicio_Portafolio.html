@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Militar</title>
+    <!-- 
+    En la etiqueta <meta> especificamos el conjunto de caracteres UTF-8 y configuramos la página para ser compatible con dispositivos móviles.
+    -->
+</head>
+<body>
+
+    <!-- *Encabezado del portafolio militar -->
+    <header>
+        <h1>Portafolio Militar de [Tu Nombre]</h1>
+        <!-- 
+        El encabezado <h1> define el título principal del portafolio. Se usa <header> para separar esta sección.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#informacion-personal">Información Personal</a></li>
+                <li><a href="#destinos-militares">Destinos Militares</a></li>
+                <li><a href="#formacion-cursos">Formación y Cursos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <!-- 
+            El menú de navegación <nav> permite a los usuarios moverse por las secciones del portafolio.
+            -->
+        </nav>
+    </header>
+
+    <!--
+    Sección de Información Personal
+    -->
+    <section id="informacion-personal">
+        <h2>Información Personal</h2>
+        <p>Nombre completo: <strong>[Nombre del Militar]</strong></p>
+        <p>Rango: <strong>[Rango Militar]</strong></p>
+        <p>Unidad Actual: <strong>[Unidad Militar]</strong></p>
+        <p>Experiencia: <strong>[Años de Servicio]</strong></p>
+        <!-- 
+        Esta sección incluye información personal como nombre, rango, unidad y años de servicio.
+        La etiqueta <strong> se utiliza para resaltar información importante.
+        -->
+    </section>
+
+    <!--
+    Sección de Destinos Militares
+    -->
+    
+    <section id="destinos-militares">
+        <h2>Destinos Militares</h2>
+        <p>En esta sección, se describen los diferentes destinos en los que el militar ha prestado servicio.</p>
+        <ul>
+            <li><strong>Destino 1:</strong> [Unidad Militar] - [Fecha de Inicio] a [Fecha de Fin]</li>
+            <li><strong>Destino 2:</strong> [Unidad Militar] - [Fecha de Inicio] a [Fecha de Fin]</li>
+            <li><strong>Destino 3:</strong> [Unidad Militar] - [Fecha de Inicio] a [Fecha de Fin]</li>
+        </ul>
+        <!-- 
+        La etiqueta <ul> se usa para crear una lista desordenada con los destinos en los que el militar ha servido.
+        Cada <li> representa un destino, y <strong> destaca el nombre del destino.
+        -->
+    </section>
+
+    <!--
+    Sección de Formación y Cursos
+    -->
+    <section id="formacion-cursos">
+        <h2>Formación y Cursos</h2>
+        <table border="1">
+            <caption>Certificaciones y Cursos Completados</caption>
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Institución</th>
+                    <th>Fecha de Finalización</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Curso de Operaciones Especiales</td>
+                    <td>Academia Militar de Zaragoza</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Curso de Estrategia y Táctica</td>
+                    <td>Escuela Superior de Guerra</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Curso de Idiomas (Inglés)</td>
+                    <td>Centro de Idiomas del Ejército</td>
+                    <td>2020</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 
+        La etiqueta <table> crea una tabla para mostrar la formación y los cursos. Se utiliza <thead> para el encabezado de la tabla y <tbody> para las filas con los datos de los cursos.
+        -->
+    </section>
+
+    <!--
+    Sección de Habilidades
+    -->
+    <section id="habilidades">
+        <h2>Habilidades y Competencias</h2>
+        <p>Aquí se describen las habilidades adquiridas durante el servicio.</p>
+        <ul>
+            <li>Experiencia en mando de tropas en combate.</li>
+            <li>Conocimientos avanzados en operaciones tácticas y logísticas.</li>
+            <li>Manejo de equipo de telecomunicaciones y radar.</li>
+            <li>Dominio de varios idiomas: Inglés, Francés.</li>
+        </ul>
+        <!-- 
+        Lista de habilidades adquiridas a lo largo de la carrera militar.
+        <ul> y <li> crean una lista para enumerar las habilidades.
+        -->
+    </section>
+
+    <!--
+    Sección de Contacto
+    -->
+    <section id="contacto">
+        <h2>Información de Contacto</h2>
+        <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <!-- 
+            El campo de texto para que los visitantes introduzcan su nombre. El atributo required lo hace obligatorio.
+            -->
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- 
+            Campo de correo electrónico con validación automática del formato de email.
+            -->
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <!-- 
+            Campo de texto donde el usuario puede escribir un mensaje.
+            -->
+
+            <button type="submit">Enviar</button>
+            <!-- 
+            Botón para enviar el formulario de contacto.
+            -->
+        </form>
+    </section>
+
+    <!--
+    Pie de página del portafolio
+    -->
+    <footer>
+        <p>Portafolio Militar - Creado por [Tu Nombre]</p>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <!-- 
+        La etiqueta <footer> define el pie de página del documento.
+        -->
+    </footer>
+
+</body>
+</html>
